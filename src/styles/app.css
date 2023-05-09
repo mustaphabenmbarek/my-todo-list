@@ -1,0 +1,5 @@
+/* Importer tous les css */
+@import './home.css';
+@import './menu.css';
+@import './taskadd.css';
+@import './tasklist.css'
