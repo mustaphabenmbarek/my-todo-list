@@ -4,7 +4,7 @@ const Tasklist = () => {
     return (
         <div className='tasklist'>
             <h1>Liste des tâches</h1>
-            <p>affichage des listes des tâches</p>
+            <p>Affichage de la liste des tâches</p>
         </div>
     );
 };
