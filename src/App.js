@@ -4,15 +4,44 @@ import Home from './pages/Home';
 import Menu from './components/Menu';
 import Taskadd from './pages/Taskadd';
 import Tasklist from './pages/Tasklist';
+import { useState } from 'react';
 
 function App() {
+  // useState represente un getter 'task' et setter 'setTask'
+  // tableau d'objets vide par défaut
+  const[tasks, setTasks] = useState([]);
+  
+  //tasks
+  // //[
+  //     {
+  //       nom: 'controle',
+  //       categorie: 'tâches journalieres',
+  //       description: 'faire le controle generale des comptes'
+  //     },
+  //    {
+  //       nom: 'imprimer',
+  //       categorie: 'tâches mensuelles',
+  //       description: 'imprimer les comptes '
+  //     },
+  //   ]
+
+  // Comportement : fonction
+  const handleTaskAdd = (task) => {
+    console.log('handleTaskAdd', task);
+    setTasks([...tasks, task]);
+  }
+
+  const handleDeleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.taskname !==id));
+  }
+
   return (
     <>
       <Menu />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/add' element={<Taskadd />} />
-        <Route path='/list' element={<Tasklist />} />
+        <Route path='/add' element={<Taskadd handleTaskAdd={handleTaskAdd} />} />
+        <Route path='/list' element={<Tasklist tasks={tasks} handleDeleteTask={handleDeleteTask} />} />
       </Routes>
     </>
   );

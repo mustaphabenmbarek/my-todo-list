@@ -2,4 +2,5 @@
 @import './home.css';
 @import './menu.css';
 @import './taskadd.css';
-@import './tasklist.css'
+@import './tasklist.css';
+@import './taskitem.css';
