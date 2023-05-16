@@ -3,7 +3,8 @@ import React from 'react';
 const Home = () => {
     return (
         <div className='home'>
-            <h1>Ma liste des tâches</h1>   
+            <h1>Application</h1>
+            <h1>Gestion des Tâches</h1>   
         </div>
     );
 };

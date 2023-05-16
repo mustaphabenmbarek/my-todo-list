@@ -34,14 +34,22 @@ const Taskadd = (props) => {
 
     return (
         <div className='taskadd'>
-            <h1>Ajout une tâche</h1>
+            {/* <h1>Ajout une tâche</h1> */}
             <div>
-                <form onSubmit={(evt) => handleSubmit(evt)} >
-                    <label htmlFor="taskname">Nom</label>
+                <form className='taskform' onSubmit={(evt) => handleSubmit(evt)} >
+                    <label htmlFor="taskname">Nom:</label>
                     <br />
-                    <input type="text" name='taskname' id='taskname' value={task.taskname} onChange={(evt) => handleChange(evt)} />
+                    <input 
+                        type="text" 
+                        name='taskname' 
+                        placeholder='Ajoutez une tâche' 
+                        id='taskname' 
+                        className='taskinput'
+                        value={task.taskname} 
+                        onChange={(evt) => handleChange(evt)} 
+                    />
                     <br />
-                    <label htmlFor="taskcategory">Catégorie</label>
+                    <label htmlFor="taskcategory">Catégorie:</label>
                     <br />
                     <select name="taskcategory" id="taskcategory" value={task.taskcategory} onChange={(evt) => handleChange(evt)}>
                         <option value="">Selectionner la tâche</option>
@@ -52,19 +60,25 @@ const Taskadd = (props) => {
                         <option value="ponctuelle">tâches ponctuelles</option>
                     </select>
                     <br />
-                    <label htmlFor="taskdescription">Description</label>
+                    <label htmlFor="taskdescription">Description:</label>
                     <br />
                     <textarea 
                         name="taskdescription" 
-                        id="taskdescription" 
+                        id="taskdescription"
+                        placeholder='Entrez description ...'
                         cols="30" 
                         rows="10"
                         value={task.taskdescription} 
                         onChange={(evt) => handleChange(evt)}
                         ></textarea>
                     <br />
-                    <button type='submit' className='btn'>Ajouter tâche</button>
+                    <div className='taskbtn'>
+                        <button type='submit'>
+                            <span>Ajouter une tâche</span>
+                        </button>
                     {/* <input type="submit" value='Ajouter tâche' className='btn' /> */}
+                    </div>
+                    
                 </form>
             </div>
         </div>

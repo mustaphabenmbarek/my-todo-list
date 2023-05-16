@@ -4,3 +4,29 @@
 @import './taskadd.css';
 @import './tasklist.css';
 @import './taskitem.css';
+
+body {
+    background: url(../assets/images/bg.jpg) center/cover;
+    min-height: 100vh;
+    margin: 30px 40px;
+}
+
+.ap-header {
+    width: 20px;
+}
+.app-logo {
+    width: 40px;
+    padding: -10px 0px 0 10px;
+    margin: -10px 0 0 0;
+}
+
+#id {
+    margin: auto;
+}
+
+@media screen and (max-width:1245px) {
+    #id {
+        width: 200px;
+    }
+}
+

@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import Taskadd from './pages/Taskadd';
 import Tasklist from './pages/Tasklist';
 import { useState } from 'react';
+import logo from './assets/images/logo.png';
 
 function App() {
   // useState represente un getter 'task' et setter 'setTask'
@@ -37,6 +38,11 @@ function App() {
 
   return (
     <>
+      <div>
+        <header className='app-header'> 
+          <img src={logo} className='app-logo' alt="logo" />
+        </header>
+      </div>
       <Menu />
       <Routes>
         <Route path='/' element={<Home />} />

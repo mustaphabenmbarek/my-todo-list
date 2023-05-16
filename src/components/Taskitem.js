@@ -5,13 +5,14 @@ const Taskitem = (props) => {
     
     return (
         <div key={task.taskname} className='card'>
-            <h2>{task.taskname} </h2>
+            <h3>Nom</h3>
+            <p>{task.taskname} </p>
             <h3>Catégorie</h3>
             <p>{task.taskcategory} </p>
             <h3>Description</h3>
             <p>{task.taskdescription} </p>
             <div className='footer'>
-                <button className='btn-delete' onClick={() => handleDeleteTask(task.taskname)} >delete</button>
+                <button className='btn-delete' onClick={() => handleDeleteTask(task.taskname)} >Supprimer</button>
             </div>
         </div>
     );

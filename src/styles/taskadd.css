@@ -1,20 +1,94 @@
 .taskadd {
-    font-size: 1.1em;
-    padding: 20px;
+    /* position: relative; */
+    font-size: 1.2em;
+    background-color: aquamarine;
+    padding: 3px;
+    margin: 10%;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 233, 0.763);
 }
 
-.btn {
-    background-color: #2fffb3;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
+.taskform {
+    width: 100%;
+    display: flex;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-items: normal;
+    /* text-align: center; */
+    padding: 2px;
+    margin: 10%;
+    
+}
+
+label {
+    color: blue;
+    /* background-color: azure; */
+    /* display:flex; */
+}
+.taskform label {
+    /* background-color: #f84848; */ 
+    
+}
+
+/* Sans animation button Ajouter une tâche*/
+.taskbtn {
+    /* background-color: #f79191; */
+    position: absolute;
+   
+    /* color: hsl(0, 0%, 5%); */
+    /* font-weight: bold;
+    padding: 14px 20px; */
     margin: 8px 0;
     border: none;
-    width: 100%;
+    border-radius: 3px;
+    width: 25%;
+    cursor: pointer;
 }
 
-input[type=text] {
-    width: 100%;
+/* Animation button Ajouter une tâche*/
+/* .taskbtn {
+    position: absolute; */
+    /* display: inline; */
+    /* text-align: center;
+    right: 0; */
+    /* position: fixed; */
+    /* text-decoration: none;
+    border-radius: 3px;
+    background: black;
+} */
+
+/* .taskform .taskbtn {
+    text-align:right;
+} */
+/* utiliser inline-block car transforme ne marche pas sur les elements inline */
+.taskbtn span {
+    display: inline-block;
+    background: yellow;
+    color: black;
+    /* border: 1px solid #333; */
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    /* l'animation : */
+    transition:
+    transform 0.15s ease-in-out,
+    color 0.15s ease-in-out,
+    backckground-color 0.15s ease-in-out;
+}
+
+.taskbtn:hover span {
+    transform: translate(-6px, -6px);
+    color: rgb(0, 0, 0);
+    background: blueviolet;
+}
+
+/* ====================================== */
+
+.taskinput[type=text] {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -24,7 +98,7 @@ input[type=text] {
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     height: 150px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -36,7 +110,7 @@ textarea {
 }
 
 select {
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
