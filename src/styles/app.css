@@ -44,12 +44,36 @@ h6 {
     padding: 20px;
     font-size: 0.8em;
     text-align: center;
+    width: 100%;
     bottom: 0;
     left: 0;
-    right: 0; 
+    right: 0;
+    border-top-width: 2px;
+    border-top-color: #2ae82d;
+    border-top-style: solid;
 }
 
 .footer-app p {
     color: black;
+}
+
+@media screen and (max-width: 700px) {
+    h6 {
+        display: flex;
+        text-align: center;
+    }
+    /*form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "i1"
+        "i2"
+        "ta"
+        "bt" ;
+    }
+
+    input, textarea {
+        font-size: 0.8 rem;
+    } */
 }
 
