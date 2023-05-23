@@ -5,7 +5,7 @@ const Tasklist = (props) => {
     const{tasks, handleDeleteTask} = props;
     return (
         <div className='tasklist'>
-            <h1>Liste des tâches</h1>
+            <h2>Liste des tâches:</h2>
             <div>
                 {
                     tasks.map((task) => (

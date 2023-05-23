@@ -8,47 +8,40 @@ import { useState } from 'react';
 import logo from './assets/images/logo.png';
 
 function App() {
-  // useState represente un getter 'task' et setter 'setTask'
   // tableau d'objets vide par défaut
-  const[tasks, setTasks] = useState([]);
-  
-  //tasks
-  // //[
-  //     {
-  //       nom: 'controle',
-  //       categorie: 'tâches journalieres',
-  //       description: 'faire le controle generale des comptes'
-  //     },
-  //    {
-  //       nom: 'imprimer',
-  //       categorie: 'tâches mensuelles',
-  //       description: 'imprimer les comptes '
-  //     },
-  //   ]
+  const [tasks, setTasks] = useState([]);
 
-  // Comportement : fonction
+  // Comportement : fonctions
   const handleTaskAdd = (task) => {
     console.log('handleTaskAdd', task);
     setTasks([...tasks, task]);
   }
 
   const handleDeleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.taskname !==id));
+    setTasks(tasks.filter((task) => task.taskname !== id));
   }
 
   return (
     <>
+      <header className='header-app' >
+        <div className='container'>
+          <img src={logo} width={40} alt="logo" />
+          <h6>GdT</h6>
+          <Menu />
+        </div>
+      </header>
       <div>
-        <header className='app-header'> 
-          <img src={logo} className='app-logo' alt="logo" />
-        </header>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/add' element={<Taskadd handleTaskAdd={handleTaskAdd} />} />
+          <Route path='/list' element={<Tasklist tasks={tasks} handleDeleteTask={handleDeleteTask} />} />
+        </Routes>
       </div>
-      <Menu />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/add' element={<Taskadd handleTaskAdd={handleTaskAdd} />} />
-        <Route path='/list' element={<Tasklist tasks={tasks} handleDeleteTask={handleDeleteTask} />} />
-      </Routes>
+      <footer className='footer-app'>
+        <div className='container'>
+          <p>&copy; - Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </footer>
     </>
   );
 }

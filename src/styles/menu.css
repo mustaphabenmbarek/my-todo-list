@@ -1,21 +1,24 @@
+* {
+    text-decoration: none;
+    color:white;
+}
+
 .menu {
     font-size: 1.2em;
     font-weight: bold;
+    padding-right: 10px;
 }
 
 ul {
-    list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-
-* {
-    text-decoration: none;
-    color: black;
+    margin-left: auto;
+    padding: 0 40px;
+    list-style-type: none;
+    width: 400px;
 }
 
 .activelink {
     font-weight: bold;
-    color: blue;
+    color: rgba(240, 226, 134, 0.9);
 }

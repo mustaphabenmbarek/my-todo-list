@@ -9,7 +9,7 @@ const Taskadd = (props) => {
     });
     const{handleTaskAdd} = props;
 
-    // // exemple task pour testet sur une donnée
+    // // exemple task pour tester sur une donnée
     // const task = {
     //     nom : 'controle',
     //     categorie : 'tâches journalières',
@@ -35,8 +35,8 @@ const Taskadd = (props) => {
     return (
         <div className='taskadd'>
             {/* <h1>Ajout une tâche</h1> */}
-            <div>
-                <form className='taskform' onSubmit={(evt) => handleSubmit(evt)} >
+            <div className='taskform'>
+                <form  onSubmit={(evt) => handleSubmit(evt)} >
                     <label htmlFor="taskname">Nom:</label>
                     <br />
                     <input 
@@ -52,7 +52,7 @@ const Taskadd = (props) => {
                     <label htmlFor="taskcategory">Catégorie:</label>
                     <br />
                     <select name="taskcategory" id="taskcategory" value={task.taskcategory} onChange={(evt) => handleChange(evt)}>
-                        <option value="">Selectionner la tâche</option>
+                        <option value="">Selectionnez une période</option>
                         <option value="journalier">tâches journalières</option>
                         <option value="hebdomadaire">tâches hebdomadaires</option>
                         <option value="mensuelle">tâches mensuelles</option>

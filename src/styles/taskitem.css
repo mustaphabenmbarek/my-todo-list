@@ -1,11 +1,24 @@
 .card {
-    border: 1px solid rgb(0, 98, 255);
-    padding: 20px;
-    margin: 10px;
+    background-color: #e6e7ed;
+    box-shadow: 5px 1px 5px 8px #e6e7ed;
+    margin: 10px 80px 10px 80px;
+    border-radius: 10px;
+}
+
+.card h5 {
+    color: black;
+    margin: 10px 0 0 20px;
+    padding: 5px;
+}
+
+.card p {
+    margin: 10px 0 0 20px;
+    padding: 5px;
+    color: black;
 }
 
 .btn-delete {
-    background-color: rgb(157, 255, 0);
+    background: rgba(249, 140, 140, 0.858);
     color: black;
     padding: 14px 20px;
     margin: 8px 0;

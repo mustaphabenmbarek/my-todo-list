@@ -1,120 +1,87 @@
 .taskadd {
-    /* position: relative; */
-    font-size: 1.2em;
-    background-color: aquamarine;
-    padding: 3px;
-    margin: 10%;
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 233, 0.763);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px 1px 5px 8px #e6e7ed;
+    margin: 80px 0 0 0;
+    border-radius: 10px;
 }
 
-.taskform {
-    width: 100%;
-    display: flex;
-    position: relative;
-    display: block;
-    flex-direction: column;
-    align-items: normal;
-    /* text-align: center; */
-    padding: 2px;
-    margin: 10%;
-    
+.taskadd  form {
+    background-color: #e6e7ed;
+    margin: 40px 30px 30px 30px;
+    padding: 30px 0px 80px 40px;
+    border-radius: 10px;
 }
 
 label {
-    color: blue;
-    /* background-color: azure; */
-    /* display:flex; */
-}
-.taskform label {
-    /* background-color: #f84848; */ 
-    
+    color: black;
 }
 
-/* Sans animation button Ajouter une tâche*/
 .taskbtn {
-    /* background-color: #f79191; */
     position: absolute;
-   
-    /* color: hsl(0, 0%, 5%); */
-    /* font-weight: bold;
-    padding: 14px 20px; */
-    margin: 8px 0;
+    margin: 0px 0;
     border: none;
-    border-radius: 3px;
-    width: 25%;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-/* Animation button Ajouter une tâche*/
-/* .taskbtn {
-    position: absolute; */
-    /* display: inline; */
-    /* text-align: center;
-    right: 0; */
-    /* position: fixed; */
-    /* text-decoration: none;
-    border-radius: 3px;
-    background: black;
-} */
-
-/* .taskform .taskbtn {
-    text-align:right;
-} */
-/* utiliser inline-block car transforme ne marche pas sur les elements inline */
 .taskbtn span {
     display: inline-block;
-    background: yellow;
+    background-color: #e6e7ed;
     color: black;
     /* border: 1px solid #333; */
     padding: 18px;
     font-size: 20px;
     font-weight: 600;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     /* l'animation : */
     transition:
     transform 0.15s ease-in-out,
     color 0.15s ease-in-out,
     backckground-color 0.15s ease-in-out;
+    
 }
 
 .taskbtn:hover span {
     transform: translate(-6px, -6px);
     color: rgb(0, 0, 0);
-    background: blueviolet;
+    background: rgba(240, 226, 134, 0.9);
 }
 
-/* ====================================== */
-
 .taskinput[type=text] {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    width: 80%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    background-color: #a9a8ac;
 }
 
 textarea {
-    width: 80%;
-    height: 150px;
+    width: 90%;
+    height: 250px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
     resize: none;
+    background-color: #a8acac;
+    color: black;
 }
 
 select {
-    width: 80%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    background-color: #a8acac;
 }
