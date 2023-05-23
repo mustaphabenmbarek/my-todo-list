@@ -22,3 +22,10 @@ ul {
     font-weight: bold;
     color: rgba(240, 226, 134, 0.9);
 }
+
+@media screen and (max-width: 400px) {
+    ul {
+        display: flex;   
+        flex-direction: column;
+    }
+}

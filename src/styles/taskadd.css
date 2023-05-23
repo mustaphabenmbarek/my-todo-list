@@ -85,3 +85,10 @@ select {
     border-radius: 4px;
     background-color: #a8acac;
 }
+
+@media screen and (max-width: 580px) {
+    .taskadd, .taskbtn {
+        width: 50%;
+    }
+
+}
