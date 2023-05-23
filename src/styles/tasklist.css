@@ -1,0 +1,11 @@
+.tasklist {
+    background: rgba(244, 243, 235, 0.9);
+    color: black;
+    margin: 20px 400px;
+    padding: 10px 0 10px;
+}
+
+.tasklist h2 {
+    color: black;
+    margin: 0px 20px;
+}

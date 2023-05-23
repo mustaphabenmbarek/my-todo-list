@@ -1,0 +1,87 @@
+.taskadd {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px 1px 5px 8px #e6e7ed;
+    margin: 80px 0 0 0;
+    border-radius: 10px;
+}
+
+.taskadd  form {
+    background-color: #e6e7ed;
+    margin: 40px 30px 30px 30px;
+    padding: 30px 0px 80px 40px;
+    border-radius: 10px;
+}
+
+label {
+    color: black;
+}
+
+.taskbtn {
+    position: absolute;
+    margin: 0px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.taskbtn span {
+    display: inline-block;
+    background-color: #e6e7ed;
+    color: black;
+    /* border: 1px solid #333; */
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    /* l'animation : */
+    transition:
+    transform 0.15s ease-in-out,
+    color 0.15s ease-in-out,
+    backckground-color 0.15s ease-in-out;
+    
+}
+
+.taskbtn:hover span {
+    transform: translate(-6px, -6px);
+    color: rgb(0, 0, 0);
+    background: rgba(240, 226, 134, 0.9);
+}
+
+.taskinput[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #a9a8ac;
+}
+
+textarea {
+    width: 90%;
+    height: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    background-color: #a8acac;
+    color: black;
+}
+
+select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #a8acac;
+}
