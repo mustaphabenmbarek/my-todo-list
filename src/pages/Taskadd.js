@@ -74,7 +74,7 @@ const Taskadd = (props) => {
                     <br />
                     <div className='taskbtn'>
                         <button type='submit'>
-                            <span>Ajouter une tâche</span>
+                            <span>Ajoutez une tâche</span>
                         </button>
                     {/* <input type="submit" value='Ajouter tâche' className='btn' /> */}
                     </div>
