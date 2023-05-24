@@ -86,9 +86,16 @@ select {
     background-color: #a8acac;
 }
 
-@media screen and (max-width: 580px) {
-    .taskadd, .taskbtn {
-        width: 50%;
+@media screen and (max-width: 590px) {
+    .taskadd {
+        top: 40%;
+        left: 50%;
+        width: 100%;   
+    }
+
+    .taskbtn span {
+        margin: 0 auto;
+        padding: 10px;
     }
 
 }

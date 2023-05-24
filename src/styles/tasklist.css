@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .tasklist {
         width: 50%;   
     }
